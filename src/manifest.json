@@ -1,18 +1,18 @@
 {
 	"name": "Agent Smith",
 	"version": "0.1.16",
+  "minimum_chrome_version": "16",
 	"description": "Agent Smith of the Chrome",
 	"homepage_url": "http://davidhong.co/agent-smith/",
 	"icons": {
-		"16": "icon16.png",
-		"48": "icon48.png",
-		"128": "icon128.png"
+    "19": "popup.19.png",
+		"48": "popup.48.png",
+		"128": "popup.128.png"
 	},
 	
-	"options_page": "options.html",
 	"background_page": "background.html",
 	"browser_action": {
-		"default_icon": "icon19.png",
+		"default_icon": "popup.19.png",
 		"popup": "options.html"
 	},
 	"permissions": [
