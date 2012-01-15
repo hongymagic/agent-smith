@@ -147,6 +147,8 @@ var UI = (function (container) {
 // Add internal events
 
 Events.add('init', function () {
+  console.log('Events.init', this, arguments);
+
   chrome.tabs.getSelected(null, function (tab) {
     UI.displayOptions(db.getDefaultUserAgents(), db.getUserAgentForTab(tab.id));
   });
@@ -170,6 +172,9 @@ chrome.tabs.onActiveChanged.addListener(function (tabId, selectInfo) {
 chrome.tabs.onCreated.addListener(function (tab) {
   UI.displayOptions(db.getDefaultUserAgents(), db.getUserAgentForTab(tab.id));
 });
+
+//
+// `init` is triggered everytime popup window is activated
 
 Events.trigger('init');
 

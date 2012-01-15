@@ -1,3 +1,4 @@
+
 var 
 
 // Interface definition for UserAgent
@@ -5,7 +6,7 @@ var
 	UserAgent = {
 		'id': 0,
 		'name': '',
-		'string: ''
+		'string': ''
 	},
 	
 // Easier way to generate User Agent object

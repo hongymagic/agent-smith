@@ -56,7 +56,7 @@ var UserAgentAPI = (function (localStorage) {
 		deleteGlobal = function () {
 			remove(GLOBAL_KEY);
 		},
-		
+
 // Parameter helpers (TODO: better with subtyping)
 
 		isGlobal = function (params) { 
@@ -86,6 +86,9 @@ var UserAgentAPI = (function (localStorage) {
 			
 			return null;
 		},
+
+    'LIST': function () {
+    },
 		
 		'DELETE': function (params) {
 			if (isGlobal(params)) {
