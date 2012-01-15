@@ -5,14 +5,14 @@
 	"description": "Agent Smith of the Chrome",
 	"homepage_url": "http://hongymagic.github.com/agent-smith/",
 	"icons": {
-    "19": "popup.19.png",
-		"48": "popup.48.png",
-		"128": "popup.128.png"
+    "19": "assets/popup.19.png",
+		"48": "assets/popup.48.png",
+		"128": "assets/popup.128.png"
 	},
 	
 	"background_page": "background.html",
 	"browser_action": {
-		"default_icon": "popup.19.png",
+		"default_icon": "assets/popup.19.png",
 		"popup": "popup.html"
 	},
 	"permissions": [
