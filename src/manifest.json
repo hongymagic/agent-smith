@@ -3,7 +3,7 @@
 	"version": "0.1.16",
   "minimum_chrome_version": "16",
 	"description": "Agent Smith of the Chrome",
-	"homepage_url": "http://davidhong.co/agent-smith/",
+	"homepage_url": "http://hongymagic.github.com/agent-smith/",
 	"icons": {
     "19": "popup.19.png",
 		"48": "popup.48.png",
