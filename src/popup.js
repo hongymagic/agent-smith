@@ -49,6 +49,7 @@ var db = (function () {
     },
 
     setUserAgentForTab: function (tabId, alias) {
+      console.log('Saving user-agent for tab', tabId, alias);
       localStorage.setItem('tab-' + tabId, JSON.stringify(findUserAgentByAlias(alias)));
       return alias;
     },
@@ -121,6 +122,8 @@ var UI = (function (container) {
 
   return {
     displayOptions: function (options, selected) {
+      console.log(options, selected);
+
       var index = 0,
           length = options.length,
           option,
@@ -144,7 +147,6 @@ var UI = (function (container) {
 // Add internal events
 
 Events.add('init', function () {
-  db.clear();
   chrome.tabs.getSelected(null, function (tab) {
     UI.displayOptions(db.getDefaultUserAgents(), db.getUserAgentForTab(tab.id));
   });
@@ -155,7 +157,6 @@ Events.add('save', function (sender, event) {
     db.setUserAgentForTab(tab.id, sender.dataset.alias);
     UI.displayOptions(db.getDefaultUserAgents(), db.getUserAgentForTab(tab.id));
     chrome.tabs.reload(tab.id, { bypassCache: true});
-    window.close();
   });
 });
 
