@@ -1,6 +1,8 @@
-
-body { min-width: 150px; font: normal normal 400 12px/120% sans-serif;}
+body { min-width: 150px; font: normal normal 400 12px/120% sans-serif; color: #222; }
 ul { margin: 0; padding: 0; }
 li { margin: 0.3 0; padding: 0; display: block; list-style-type: none; }
+a { text-decoration: none; color: #222; }
+a:hover { background-color: #ddd; }
+a:active { font-weight: 700; }
 li a { margin: 0; padding: 0.3em 0.6em; display: block; }
-li.current a { background-color: #eee; }
+li.current a { background-color: #eee; font-weight: 700; }
