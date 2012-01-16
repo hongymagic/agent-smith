@@ -10,6 +10,7 @@ var UserAgentAPI = (function (localStorage) {
 	
 	var
 	
+    STORED_AGENTS = 'STORED_AGENTS',
 		GLOBAL_KEY = 'GLOBAL',
 	
 // localStorage helpers
@@ -56,6 +57,22 @@ var UserAgentAPI = (function (localStorage) {
 		deleteGlobal = function () {
 			remove(GLOBAL_KEY);
 		},
+
+// Stored user-agents
+
+    retrieveAgents = function (filter, sort) {
+      var list = get(STORED_AGENTS);
+      
+      if (typeof filter === 'function') {
+      }
+
+      if (typeof sort === 'function') {
+      }
+
+      return list;
+    },
+    storeAgent = function (agent) {
+    },
 
 // Parameter helpers (TODO: better with subtyping)
 
