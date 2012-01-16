@@ -1,2 +1,6 @@
 
-li.current a { color: red; }
+body { min-width: 150px; font: normal normal 400 12px/120% sans-serif;}
+ul { margin: 0; padding: 0; }
+li { margin: 0.3 0; padding: 0; display: block; list-style-type: none; }
+li a { margin: 0; padding: 0.3em 0.6em; display: block; }
+li.current a { background-color: #eee; }
