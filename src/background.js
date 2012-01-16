@@ -5,7 +5,7 @@ var
 	},
 	blocker = ['requestHeaders', 'blocking'];
 
-chrome.experimental.webRequest.onBeforeSendHeaders.addListener(function(details) {
+chrome.webRequest.onBeforeSendHeaders.addListener(function(details) {
 	var headers = details.requestHeaders,
 			userAgent = JSON.parse(localStorage.getItem('tab-' + details.tabId));
 
