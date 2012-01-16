@@ -14,7 +14,7 @@ There are two major versions of "Agent Smith". To find out which one is suitable
 
 ## Chrome 16 and below
 
-[Download and install `agent-smith.crx v0.1.16` on your Chrome browser](https://github.com/hongymagic/agent-smith/raw/master/agent-smith.crx)
+[Download and install `agent-smith.crx v0.1.16` on your Chrome browser](https://github.com/hongymagic/agent-smith/raw/chrome-16/agent-smith.crx)
 
 ## Chrome 17 and above
 
