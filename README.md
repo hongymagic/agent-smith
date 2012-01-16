@@ -23,3 +23,14 @@ There are two major versions of "Agent Smith". To find out which one is suitable
 # How to contribute
 
 Fork, modify, test, and request.
+
+# TODO
+
+1. Add more user-agent strings;
+2. Add options page;
+3. Allow `Global` flag to be set; and
+4. Change the icon.
+
+# Specials thanks
+
+	- [Wayne Petzler](http://portfolio.paperplayground.com/) for the icon!

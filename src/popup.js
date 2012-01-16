@@ -107,6 +107,7 @@ var UI = (function (container) {
 
 			a.setAttribute('href', 'javascript:;');
 			a.setAttribute('data-alias', option.alias);
+			a.setAttribute('title', option.string);
 			a.textContent = option.alias;
 			a.addEventListener('click', function (event) {
 				Events.trigger('save', this, event);
