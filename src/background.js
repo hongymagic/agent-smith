@@ -18,8 +18,11 @@ chrome.webRequest.onBeforeSendHeaders.addListener(function(details) {
 			break;
 		}
 	}
-		
-	if (i < headers.length) {
+
+// If request header contains User-Agent and settings
+// exist, change the User-Agent value before sending headers
+
+	if (i < headers.length && userAgent.string) {
 		headers[i].value = userAgent.string;
 	}
 
